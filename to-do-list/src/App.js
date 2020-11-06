@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ToDos from './ToDos';
-import AddTodo from './AddTodo';
+import ToDos from './component/ToDos';
+import AddTodo from './component/AddTodo';
 
 import './App.css';
 

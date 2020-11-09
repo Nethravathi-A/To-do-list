@@ -54,23 +54,23 @@ font-size: 18px;
   margin: 1rem,0;
   font-size: 20px;
 }
-.addtodo{
+.add-todo{
   margin-top: 2rem;
 }
-.addtodo form{
+.add-todo form{
   display: flex;
   flex-direction: column;
   
 
 }
-.addtodo label{
+.add-todo label{
   font-size: 20px;
   font-weight: bold;
   color: #fff;
   margin-bottom: .5rem;
 
 }
-.addtodo input{
+.add-todo input{
   height: 2.5rem;
   width: 100%;
   border: none;
@@ -90,7 +90,7 @@ font-size: 18px;
 .danger{
   background: orangered;
 }
-.c1{
+.to-do{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -98,7 +98,7 @@ font-size: 18px;
   text-align: right;
   margin-bottom: 2rem;
 }
-.c2{
+.done{
   text-transform: uppercase;
   font-size: 18px;
   color:black;

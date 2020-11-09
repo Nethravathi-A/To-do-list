@@ -11,28 +11,25 @@ class AddTodo extends Component{
 
     }
     handleSubmit=(e)=>{
-        e.preventDefault();
+       e.preventDefault();
         this.props.addTodo(this.state);
         this.setState({
             content:''
         })
 
 
-    }
+   }
     render(){
         return(
-            <div className="addtodo">
+            <div className="add-todo">
             <form onSubmit={this.handleSubmit}>
                 
                 <input onChange={this.handleChange}
                 type="text" placeholder= "Add Todos" value=
                 {this.state.content}/>
-            </form>
-            
+            </form>     
 
             </div>
-
-
 
         )
         

@@ -13,10 +13,11 @@ class App extends Component{
       
     ],
     message:'',
-    classMessage:''
+    classMessage:'',
+    
   }
   deleteToDo=(id)=>{
-    //console.log('delete todo',id);//
+    //console.log('delete todo',id);
     const todos = this.state.todos.filter
     (todo=>{
       return todo.id!==id;
@@ -48,6 +49,7 @@ class App extends Component{
       }, 2000)
     //console.log('addtodo from app.js')
   }
+ 
   render(){
   const message =this.state.message!=='' ? (
     <div className={`message $
@@ -61,8 +63,8 @@ class App extends Component{
         {message}
         <AddTodo addTodo={this.addTodo}/>
       
-        <span className="c1">TO DO</span> 
-        <span className="c2">DONE</span>
+        <span className="to-do">TO DO</span> 
+        <span className="done">DONE</span>
         <ToDos deleteToDo={this.deleteToDo} 
         todos={this.state.todos}/>
       </div>

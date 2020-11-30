@@ -9,6 +9,7 @@ const ToDos=({todos,deleteToDo})=> {
                     <div className="todo-wrap">
                         <p className="todo">{todo.content}</p>
                         <button onClick={()=>{deleteToDo(todo.id)}}>Remove</button>
+           
                     </div>
                 </div>
             )
